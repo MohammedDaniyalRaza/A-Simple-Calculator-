@@ -3,12 +3,12 @@
 import inquirer from "inquirer";
 const answer = await inquirer.prompt([
     {
-        message: "Enter First Number Please: ",
+        message: "Enter Your First Number Please: ",
         type: "number",
         name: "FirstNumber",
     },
     {
-        message: "Enter Second Number Please: ",
+        message: "Enter Your Second Number Please: ",
         type: "number",
         name: "SecondNumber",
     },
@@ -36,10 +36,11 @@ else if (answer.Operator === "Percentage") {
     console.log(answer.FirstNumber / answer.SecondNumber * 100 + "%");
 }
 else {
-    console.log("PLEASE ENTER A VALID OPERATOR...");
+    console.log("PLEASE ENTER A VALID OPERATOR....");
 }
 ;
 // Percentage= 
 // Diffrence (Divide By) Orignal Value
 // and Then Multiply By 100
-/* 30/100 x100 = 30% */ 
+/* 30/100 x100 = 30% */
+console.log("The End...");
